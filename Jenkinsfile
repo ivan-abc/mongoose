@@ -5,6 +5,9 @@ pipeline {
             steps {
                 sh './gradlew build'
             }
+            steps {
+                sh 'gradle test'
+            }
         }
     }
 }
